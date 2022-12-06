@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@100;200;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <title>DogDoo</title> 
+</head>
+<body>
+  <header class="menu-bg">
+    <div class="menu">
+    <div class="menu-logo">
+      <a href="#">DogDoo</a>
+    </div>
+    <nav class="menu-nav" aria-label="menu principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#missao">Missão</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+   </div>
+  </header>
+  
+  <main class="estrutura-geral">
+    <div class="modulo">
+      <section class="parallax parallax-1">
+        <h1>Encontre seu melhor amigo aqui</h1>
+      </section>
+      <section class="parallax parallax-2">
+        <h1>Adicione mais um membro à família</h1>
+      </section>
+      <section class="parallax parallax-3">
+        <h1>Adotar é um ato de amor</h1>
+      </section>
+    </div>
+
+    <section class="sobre-bg">
+      <h2>Sobre nós</h2>
+      <div class="sobre" id="sobre">
+        <div class="sobre-ilustracao">
+          <img src="./img/ilustracao.svg" alt="ilustracao de cachorro">
+        </div>
+        <div class="sobre-conteudo">
+          <p>A DogDoo ajuda as pessoas a se conectarem com os pets mais perfeitamente adotáveis, mas não paramos por aqui. A DogDoo oferece suporte e orientação após a adoção para assegurar que as pessoas e os pets tenham vidas felizes e duradouras.</p>
+          <p>Nós avistamos um futuro onde cada pet tenha um lugar para chamarde lar. Nós, da DogDoo, estamos tornando cada vez mais fácil para que isto se concretize e você encontre o mais novo membro da sua família.</p>
+        </div>
+      </div>
+    </section>
+
+   <section class="missao-bg">
+    <div class="missao-container" id="missao">
+      <div class="missao-content">
+        <div class="img-1">
+          <img src="./img/pet1.jpg" alt="">
+        </div>
+        <h2>O que nós fazemos</h2>
+        <p>Então, como tudo isso funciona? Numa combinação de humanidade e amor, é claro. Nossos voluntários promovem campanhas para angariar recursos a fim de conseguir medicamentos e suprimentos para nossos bichinhos até que eles sejam adotados.</p>
+        <a href="#" class="missao-btn">SAIBA MAIS</a>
+      </div>
+
+      <div class="missao-content">
+        <h2>Nossa missão</h2>
+        <p>Na DogDoo manter os altos padrões de serviço é nosso  objetivo . DogDoo proporciona soluções humanas e sustentáveis a múltiplas questões que afetam a vida de nossos pets, tutores e a comunidade  em que eles vivem.</p>
+        <a href="#" class="missao-btn">SAIBA MAIS</a> 
+        <div class="img-2">
+          <img src="./img/pet2.jpg" alt="">
+        </div> 
+      </div>
+    </div>
+   </section>
+  </main>
+
+    <section class="depoimentos-bg">
+      <div class="depoimentos" id="depoimentos">
+        <h2>depoimentos</h2>
+        <div class="depoimentos-pessoas">
+        <div class="depoimentos-img">
+          <img src="./img/depoimento1.jpg" align="top"  alt="crianca segurando um cachorro">
+          <blockquote class="citacao">
+            <p>“Desde sempre eu peço ao meus pais um cãozinho e finalmente eles  adotaram o Finn. Meus dias sao muito mais alegres  agora”.</p>
+          </blockquote>
+        </div>
+        <div class="depoimentos-img">
+          <img src="./img/depoimento2.jpg" align="top"  alt="crianca segurando um cachorro">
+          <blockquote class="citacao">
+            <p>“Tivemos nossos desafios com o Beaker, mas hoje nos consideramos pessoas mais pacientes e que sabem apreciar as coisas simples da vida”.</p>
+          </blockquote>
+        </div>
+        <div class="depoimentos-img">
+          <img src="./img/depoimento3.jpg" align="top"  alt="crianca segurando um cachorro">
+          <blockquote class="citacao">
+            <p>“Muffin é um excelente cãozinho. É meigo, esperto, obediente e amável com as pessoas e outros cães”.</p>
+          </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato-bg">
+      <div class="contato" id="contato"> 
+        <h1>contacte-nos</h1>
+        <form action="" class="form"> 
+          <div class="input-box">
+          <input type="text" name="nome" id="nome" class="input-user" required>
+       <label for="nome" class="label-input">Nome completo</label>
+        </div><br><br>
+        <div class="input-box">
+          <input type="text" name="email" id="email" class="input-user" required>
+          <label for="email" class="label-input">Email</label>
+        </div><br><br>
+        <div class="input-box">
+          <input type="text" name="titulo" id="titulo" class="input-user" required>
+          <label for="titulo" class="label-input">Assunto</label>
+        </div><br>
+        <textarea name="mensagem" id="mensagem" cols="25" rows="8" placeholder="Escreva sua mensagem..."></textarea>
+        <button type="submit" id="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

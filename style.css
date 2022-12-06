@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+img{
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Menu */
+
+.menu-bg {
+  background: #000036;
+}
+
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.menu-logo a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin: 0 10px;
+}
+
+.menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+
+.menu-nav a {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.menu-nav a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #ffffff;
+  margin-top: 2px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.menu-nav a:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 760px) {
+  .menu-logo a {
+    font-size: 2rem;
+  }
+  .menu-nav a {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-nav a {
+    margin: 5px 0 0 5px;
+    padding: 5px;
+    background: rgba(0,0,0,.4);
+    border-radius: 5px;
+  }
+  .menu-nav a:hover {
+    color: #ffffff;
+    /* font-size: 0.875rem; */
+  }
+  .menu-logo a {
+    margin-bottom: 15px;
+    font-size: 1.75rem;
+  }
+  .menu-nav a:after {
+    display: none;
+  }
+}
+
+/* Parallax */
+
+.modulo .parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  /* width:  100%; */
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.modulo .parallax:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 50%, #000 100%);
+}
+
+.modulo .parallax-1 {
+  background-image: url("./img/dog1-p.jpg");
+}
+
+.modulo .parallax-2 {
+  background-image: url("./img/dog2-p.jpg");
+}
+
+.modulo .parallax-3 {
+  background-image: url("./img/dog3-p.jpg");
+}
+
+.modulo .parallax h1 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-weight: 700;
+  z-index: 50;
+}
+
+@media (max-width: 600px) {
+  .modulo .parallax h1 {
+    font-size: 2rem;
+  }
+}
+
+/* About us */
+
+.sobre-bg{
+  background: #ededed;
+}
+
+section > h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 60px;
+  margin: 8px 0 0 110px;
+  color: #7003CA;
+}
+
+.sobre {
+  max-width: 1000px;
+  box-sizing: border-box ;
+  display: flex;
+  margin: 0 auto;
+  border-top: 2px solid #707070;
+  padding: 60px 0px 60px 0;
+}
+
+.sobre-ilustracao img {
+  width: 260px;
+  margin-top: 30px;
+  flex: 1;
+}
+
+.sobre-conteudo p {
+  flex: 2;
+  color: #6908BA;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  max-width: 860px;
+  /* width: 100%; */
+  margin: 30px 30px 0 auto;
+  text-align: left start;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 760px) {
+  .sobre-ilustracao img {
+    display: none;
+  }
+  .sobre {
+    padding: 0px 0 30px 30px;
+    border-top: none;
+  }
+  .sobre p{
+    font-size: 1.125rem;
+  }
+  section > h2 {
+    font-size: 2rem;
+    text-decoration: 2px solid underline;
+    margin: 0 0 0 30px;
+  }
+}
+
+/* Missão */
+
+.missao-bg {
+  background: #121212;
+}
+
+.missao-container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 60px 30px 120px 30px ;
+  position: relative;
+}
+
+.missao-content h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+.missao-content p {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  /* font-weight: 400; */
+  margin-top: 20px;
+  line-height: 1.4;
+  text-align: left;
+  color: #B2B2B2;
+}
+
+.missao-content .img-1 {
+  margin-bottom: 60px;
+  max-width: 560px;
+  max-height: 465px;
+}
+
+.missao-content .img-2 {
+  margin-top: 120px;
+  max-width: 560px;
+  max-height: 465px;
+}
+
+.missao-btn {
+  display: inline-block;
+  background: #BAA1CE;
+  padding: 16px 32px;
+  font-size: 1.125rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #121212;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  /* position: absolute; */
+  transition: .3s;
+  margin-top: 20px;
+}
+
+.missao-btn:hover {
+  background: #121212;  
+  color: #BAA1CE;
+  border: 2px solid #BAA1CE;
+}
+
+@media (max-width: 760px) {
+  .missao-container {
+    grid-template-columns: 1fr;
+    padding: 60px 30px 60px 30px;
+  }
+  .missao-content h2 {
+    font-size: 1.75rem;
+  }
+  .missao-content p {
+    font-size: 1.125rem;
+  }
+  .missao-content .img-1 {
+    margin-bottom: 40px;
+    min-width: 260px;
+    min-height: 200px;
+  }
+  .missao-content .img-2 {
+    margin-top: 40px;
+    min-width: 260px;
+    min-height: 200px;
+  }
+  .missao-btn {
+    padding: 8px 16px;
+  }
+}
+
+/* Depoimentos */
+
+.depoimentos-bg {
+  background: #483D5B;
+}
+
+.depoimentos {
+  max-width: 1000px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.depoimentos-pessoas {
+  display: flex;
+  gap: 40px;
+}
+
+.depoimentos-img img {
+  object-fit: cover;
+  flex: 1 1 360px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.depoimentos h2 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  color: rgba(237,237,237,0.2);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+
+  .citacao p {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #ededed;
+  }
+
+  @media (max-width: 760px) {
+    .depoimentos h2 {
+      font-size: 2rem;
+    }
+    .depoimentos {
+      padding: 40px 20px 40px 20px;
+    }
+    .citacao p {
+      font-size: 1.125rem;
+    }
+    .depoimentos-pessoas {
+      flex-wrap: wrap;
+    }
+  }
+
+  /* Contato */
+  .contato-bg {
+    background: #000036;
+  }
+
+  .contato {
+    max-width: 1200px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+    /* position: relative; */
+    /* height: 100vh; */
+    }
+
+  .contato > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #A8B0B4;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 40px;
+  }
+
+.form {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+  /* .form {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+    margin-top: 120px;
+  } */
+
+.input-box {
+  position: relative;
+}
+
+  .input-user{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #C286E1;
+    outline: none;
+    color: #ffffff;
+    font-size: 1rem ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 350px;
+    letter-spacing: 2px;
+    padding: 8px 0 8px 0;
+  }
+
+  .label-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: .3s;
+    color: #A8B0B4;
+  }
+
+  .input-user:focus ~ .label-input,
+  .input-user:valid ~ .label-input {
+    top: -20px;
+    font-size: .875rem;
+    color: #c286e1;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  #submit {
+    padding: 15px;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #000036;
+    background: linear-gradient(rgb(3,248,255), rgb(27,128,225));
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #submit:hover {
+    background: linear-gradient(rgb(3,248,255), rgb(0,100,255));
+  }
+
+  @media (max-width: 760px) {
+    .contato > h1 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .contato h1 {
+      font-size: 1.75rem;
+      letter-spacing: 2px;
+    }
+    .contato {
+      padding: 40px 8px 40px 8px;
+    }
+  }
+
+  
+
+  
